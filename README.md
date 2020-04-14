@@ -1,12 +1,14 @@
-# hapi-govuk-examples
+# Hapi Govuk examples
 
 An introduction to the govuk plugins (by example) for the hapi Node.js framework.
 
+## Prerequisites
+- Node v12+ ([The best way to install Node is via NVM](https://github.com/nvm-sh/nvm))
 
 ## The hapi-govuk plugins:
 - [hapi-govuk-frontend](#hapi-govuk-frontend)
 - [hapi-govuk-journey-map](#hapi-govuk-journey-map)
-- [hapi-govuk-question-page](#hapi-govuk-frontend)
+- [hapi-govuk-question-page](#hapi-govuk-question-page)
 
 ## hapi-govuk-frontend
 
