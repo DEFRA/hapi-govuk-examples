@@ -41,6 +41,11 @@ Install the required dependencies using npm
 foo@bar:~$ npm install @hapi/hapi govuk-frontend @envage/hapi-govuk-frontend node-sass nunjucks -S
 ```
 
+Install the required development dependencies using npm
+```console
+foo@bar:~$ npm install node-sass -D
+```
+
 Output the contents of the newly created and updated package.json file
 ```console
 foo@bar:~$ cat package.json
@@ -59,10 +64,14 @@ The expected output should be something like:
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hapi/hapi": "^19.1.1",
-    "govuk-frontend": "^3.6.0",
-    "@envage/hapi-govuk-frontend": "^0.2.0"
-  }
+      "@envage/hapi-govuk-frontend": "^0.2.1",
+      "@hapi/hapi": "^19.1.1",
+      "govuk-frontend": "^3.6.0",
+      "nunjucks": "^3.2.1"
+    },
+    "devDependencies": {
+      "node-sass": "^4.13.1"
+    }
 }
 ```
 
