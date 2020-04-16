@@ -38,7 +38,7 @@ foo@bar:~$ npm init
 
 Install the required dependencies using npm
 ```console
-foo@bar:~$ npm install @hapi/hapi govuk-frontend @envage/hapi-govuk-frontend node-sass nunjucks -S
+foo@bar:~$ npm install @hapi/hapi govuk-frontend @envage/hapi-govuk-frontend nunjucks -S
 ```
 
 Install the required development dependencies using npm
