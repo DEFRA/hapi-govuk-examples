@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "postinstall": "node_modules/.bin/node-sass --output-style=expanded --output=public/build/stylesheets application.scss"
   },
   "author": "",
   "license": "ISC",
@@ -12,7 +13,9 @@
     "@envage/hapi-govuk-frontend": "^0.2.1",
     "@hapi/hapi": "^19.1.1",
     "govuk-frontend": "^3.6.0",
-    "node-sass": "^4.13.1",
     "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1"
   }
 }
