@@ -1,11 +1,11 @@
 {
-  "name": "hapi-frontend-example-1",
+  "name": "frontend-example",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "postinstall": "node_modules/.bin/node-sass --output-style=expanded --output=public/build/stylesheets application.scss"
+    "postinstall": "npx node-sass --output-style=expanded --output=public/build/stylesheets application.scss"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +16,7 @@
     "nunjucks": "^3.2.1"
   },
   "devDependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "standard": "^14.3.3"
   }
 }
