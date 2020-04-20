@@ -1,5 +1,5 @@
 # Frontend example part 3
-Please note that this continues with the project built within [example 2](https://github.com/DEFRA/hapi-govuk-examples/tree/master/front-end-examples/frontend-example-2)
+Please note that this continues with the project built within [part 2](https://github.com/DEFRA/hapi-govuk-examples/tree/master/front-end-examples/frontend-example-2)
 
 ### Break the project down into it's component parts
 In order to make it easier to maintain the project and add both additional plugins and routes, the project files need to be broken down into separate files.
@@ -16,7 +16,7 @@ Create the file home.route.js within the routes folder containing the following
 module.exports = {
   method: 'GET',
   path: '/',
-  handler: (request, h) => h.view('hello-world', {
+  handler: (request, h) => h.view('home', {
     pageHeading: 'Hello World!',
     pageText: 'Here is my first GOV.UK Design System styled page'
   })
@@ -110,7 +110,7 @@ Create a layout in the views folder as layout.njk containing the following
 {% endblock %}
 ```
 
-Edit the view hello-world.njk so that it extends the layout above
+Edit the view home.njk so that it extends the layout above
 ```twig
 {% extends "layout.njk" %}
 
@@ -129,7 +129,7 @@ Check the server is running correctly on [localhost:3000](http://localhost:3000)
 
 The browser should display the same [GOV.UK Design System styled](https://design-system.service.gov.uk/) web page with the heading **Hello World!** as before
 
-![alt text](https://raw.githubusercontent.com/DEFRA/hapi-govuk-examples/master/front-end-examples/screen-shots/gds-styled-hello-world.png "GOV.UK Design System styled screen-shot")
+![alt text](https://raw.githubusercontent.com/DEFRA/hapi-govuk-examples/master/front-end-examples/screen-shots/gds-styled-home.png "GOV.UK Design System styled screen-shot")
 
 ### Completed frontend-example part 2
 If all the steps above, have been followed correctly, the project should contain the files found [here](https://github.com/DEFRA/hapi-govuk-examples/tree/master/front-end-examples/frontend-example-3)

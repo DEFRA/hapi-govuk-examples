@@ -1,5 +1,5 @@
 # Frontend example part 2
-Please note that this continues with the project built within [example 1](https://github.com/DEFRA/hapi-govuk-examples/tree/master/front-end-examples/frontend-example-1)
+Please note that this continues with the project built within [part 1](https://github.com/DEFRA/hapi-govuk-examples/tree/master/front-end-examples/frontend-example-1)
 
 ### Install your new dependencies
 The following dependencies are also required:
@@ -104,7 +104,7 @@ const init = async () => {
   await server.route({
     method: 'GET',
     path: '/',
-    handler: (request, h) => h.view('hello-world', {
+    handler: (request, h) => h.view('home', {
       pageHeading: 'Hello World!',
       pageText: 'Here is my first GOV.UK Design System styled page'
     })
@@ -129,14 +129,14 @@ foo@bar:~$ npx standard --fix
 ```
 
 ### Create your view
-The view hello-world.njk needs to be created in the "views" folder to match the view specified above.
+The view home.njk needs to be created in the "views" folder to match the view specified above.
 
 Create the "views" folder to store your views
 ```console
 foo@bar:~$ mkdir views
 ```
 
-Now create your first view by creating the file views/hello-world.njk with the following content
+Now create your first view by creating the file views/home.njk with the following content
 ```twig
 {% extends "govuk/template.njk" %}
 
@@ -179,10 +179,10 @@ Check the server is running correctly on [localhost:3000](http://localhost:3000)
 
 The browser should display: A [GOV.UK Design System styled](https://design-system.service.gov.uk/) web page with the heading **Hello World!**
 
-![alt text](https://raw.githubusercontent.com/DEFRA/hapi-govuk-examples/master/front-end-examples/screen-shots/gds-styled-hello-world.png "GOV.UK Design System styled screen-shot")
+![alt text](https://raw.githubusercontent.com/DEFRA/hapi-govuk-examples/master/front-end-examples/screen-shots/gds-styled-home.png "GOV.UK Design System styled screen-shot")
 
 ### Completed frontend-example part 2
 If all the steps above, have been followed correctly, the project should contain the files found [here](https://github.com/DEFRA/hapi-govuk-examples/tree/master/front-end-examples/frontend-example-2)
 
 ## Frontend example part 3
-Continue with the [third example](https://github.com/DEFRA/hapi-govuk-examples/tree/master/front-end-examples/frontend-example-3)
+Continue with the [part 3](https://github.com/DEFRA/hapi-govuk-examples/tree/master/front-end-examples/frontend-example-3)

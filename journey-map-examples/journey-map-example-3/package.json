@@ -1,0 +1,22 @@
+{
+  "name": "frontend-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "postinstall": "npx node-sass --output-style=expanded --output=public/build/stylesheets application.scss"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@envage/hapi-govuk-frontend": "^0.2.1",
+    "@hapi/hapi": "^19.1.1",
+    "govuk-frontend": "^3.6.0",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "standard": "^14.3.3"
+  }
+}
