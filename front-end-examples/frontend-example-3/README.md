@@ -129,8 +129,8 @@ Check the server is running correctly on [localhost:3000](http://localhost:3000)
 
 The browser should display the same [GOV.UK Design System styled](https://design-system.service.gov.uk/) web page with the heading **Hello World!** as before
 
-![alt text](../screen-shots/gds-styled-hello-world.png "GOV.UK Design System styled screen-shot")
+![alt text](../screen-shots/gds-styled-home.png "GOV.UK Design System styled screen-shot")
 
 ### Completed frontend-example part 3
-If all the steps above, have been followed correctly, the project should contain the files found [here](https://github.com/DEFRA/hapi-govuk-examples/tree/master/front-end-examples/frontend-example-3)
+If all the steps above, have been followed correctly, the project should contain the files found [here](.)
 

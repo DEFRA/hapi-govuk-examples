@@ -115,7 +115,7 @@ The browser should display: **Hello World!**
 In the terminal, press control-C to stop the server.
 
 ### Completed frontend-example part 1
-If all the steps above, have been followed correctly, the project should contain the files found [here](https://github.com/DEFRA/hapi-govuk-examples/tree/master/front-end-examples/frontend-example-1)
+If all the steps above, have been followed correctly, the project should contain the files found [here](.)
 
 ## Frontend example part 2
 Continue with [part 2](../frontend-example-2/README.md)

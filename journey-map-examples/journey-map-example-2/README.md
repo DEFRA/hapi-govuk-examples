@@ -120,7 +120,7 @@ When "Yes" is selected and continue is clicked, the expected error status for th
 ![alt text](https://raw.githubusercontent.com/DEFRA/hapi-govuk-examples/master/journey-map-examples/screen-shots/completed(404).png "completed page missing")
 
 ### Completed journey-map-example part 2
-If all the steps above, have been followed correctly, the project should contain the files found [here](https://github.com/DEFRA/hapi-govuk-examples/tree/master/journey-map-examples/journey-map-example-2)
+If all the steps above, have been followed correctly, the project should contain the files found [here](.)
 
 ## Journey map example part 3
 Continue with [part 3](../journey-map-example-3/README.md)

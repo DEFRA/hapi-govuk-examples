@@ -65,7 +65,7 @@ Pressing the continue button should display the expected error status for the /q
 In the terminal, press control-C to stop the server.
 
 ### Completed journey-map-example part 1
-If all the steps above, have been followed correctly, the project should contain the files found [here](https://github.com/DEFRA/hapi-govuk-examples/tree/master/journey-map-examples/journey-map-example-1)
+If all the steps above, have been followed correctly, the project should contain the files found [here](.)
 
 ## Journey map example part 2
 Continue with [part 2](../journey-map-example-2/README.md)
