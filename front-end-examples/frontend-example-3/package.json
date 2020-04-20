@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "npx node-sass --output-style=expanded --output=public/build/stylesheets application.scss"
   },
   "author": "",
   "license": "ISC",

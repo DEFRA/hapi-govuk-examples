@@ -8,13 +8,10 @@ const init = async () => {
     host: 'localhost'
   })
 
-  await server.route({
-    method: 'GET',
-    path: '/',
-    handler: () => 'Hello World!'
-  })
-
+  await server.register(require('./plugins/frontend.plugin'))
+  await server.route(require('./routes/home.route'))
   await server.start()
+
   console.log('Server running on %s', server.info.uri)
 }
 
