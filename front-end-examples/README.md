@@ -7,9 +7,9 @@ for a hapi server.
 ## Assumptions
 Please note the following assumptions:
 - The version of node is 12 or greater
-- Styling of the web pages will adhere to the [GDS Design System](https://design-system.service.gov.uk)
+- Styling of the web pages will adhere to the [GOV.UK Design System](https://design-system.service.gov.uk)
 - [Nunjucks](https://mozilla.github.io/nunjucks/) will be used to build page views to take
- full advantage of the components supplied within the GDS Design system.
+ full advantage of the components supplied within the GOV.UK Design System.
 - [StandardJS](https://standardjs.com/) will be used to make sure the Javascript adheres to the DDTS standards
 
 ## Getting started

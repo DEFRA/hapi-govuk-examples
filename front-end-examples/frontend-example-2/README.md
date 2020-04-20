@@ -50,7 +50,7 @@ The expected output should be something like:
 }
 ```
 ### Build the required css
-In order to create a page that adheres to the GDS design, we first need to generate a GDS Stylesheet.
+In order to create a page that adheres to the GOV.UK Design System, we first need to generate a stylesheet.
 To do this an application.scss file needs to be created with the correct import statement.
 The stylesheet then needs to be generated using node-sass.
 
@@ -106,7 +106,7 @@ const init = async () => {
     path: '/',
     handler: (request, h) => h.view('hello-world', {
       pageHeading: 'Hello World!',
-      pageText: 'Here is my first GDS styled page'
+      pageText: 'Here is my first GOV.UK Design System styled page'
     })
   })
 
@@ -177,9 +177,9 @@ foo@bar:~$ node index
 
 Check the server is running correctly on [localhost:3000](http://localhost:3000) again
 
-The browser should display: A [GDS styled](https://design-system.service.gov.uk/) web page with the heading **Hello World!**
+The browser should display: A [GOV.UK Design System styled](https://design-system.service.gov.uk/) web page with the heading **Hello World!**
 
-![alt text](https://raw.githubusercontent.com/DEFRA/hapi-govuk-examples/master/front-end-examples/screen-shots/gds-styled-hello-world.png "GDS styled screen-shot")
+![alt text](https://raw.githubusercontent.com/DEFRA/hapi-govuk-examples/master/front-end-examples/screen-shots/gds-styled-hello-world.png "GOV.UK Design System styled screen-shot")
 
 ### Completed frontend-example part 2
 If all the steps above, have been followed correctly, the project should contain the files found [here](https://github.com/DEFRA/hapi-govuk-examples/tree/master/front-end-examples/frontend-example-2)
