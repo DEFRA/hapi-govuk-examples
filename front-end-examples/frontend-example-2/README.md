@@ -5,7 +5,7 @@ Please note that this continues with the project built within [example 1](https:
 The following dependencies are also required:
 - [govuk-frontend](https://www.npmjs.com/package/govuk-frontend)
 - [@envage/hapi-govuk-frontend](https://www.npmjs.com/package/@envage/hapi-govuk-frontend)
-- [nunjucks]()
+- [nunjucks](https://www.npmjs.com/package/nunjucks)
 
 Install the dependencies using npm
 ```console
