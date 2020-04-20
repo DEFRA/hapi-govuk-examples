@@ -123,4 +123,4 @@ When "Yes" is selected and continue is clicked, the expected error status for th
 If all the steps above, have been followed correctly, the project should contain the files found [here](https://github.com/DEFRA/hapi-govuk-examples/tree/master/journey-map-examples/journey-map-example-2)
 
 ## Journey map example part 3
-Continue with the [part 3](../journey-map-example-3/README.md)
+Continue with [part 3](../journey-map-example-3/README.md)

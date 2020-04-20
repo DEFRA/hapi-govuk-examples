@@ -94,4 +94,4 @@ When "Yes" is selected and continue is clicked, the completed page is displayed 
 If all the steps above, have been followed correctly, the project should contain the files found [here](https://github.com/DEFRA/hapi-govuk-examples/tree/master/journey-map-examples/journey-map-example-3)
 
 ## Journey map example part 4
-Continue with the [part 4](../journey-map-example-4/README.md)
+Continue with [part 4](../journey-map-example-4/README.md)

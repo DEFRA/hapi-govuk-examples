@@ -68,4 +68,4 @@ In the terminal, press control-C to stop the server.
 If all the steps above, have been followed correctly, the project should contain the files found [here](https://github.com/DEFRA/hapi-govuk-examples/tree/master/journey-map-examples/journey-map-example-1)
 
 ## Journey map example part 2
-Continue with the [part 2](../journey-map-example-2/README.md)
+Continue with [part 2](../journey-map-example-2/README.md)

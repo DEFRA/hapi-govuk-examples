@@ -185,4 +185,4 @@ The browser should display: A [GOV.UK Design System styled](https://design-syste
 If all the steps above, have been followed correctly, the project should contain the files found [here](https://github.com/DEFRA/hapi-govuk-examples/tree/master/front-end-examples/frontend-example-2)
 
 ## Frontend example part 3
-Continue with the [part 3](../frontend-example-3/README.md)
+Continue with [part 3](../frontend-example-3/README.md)
