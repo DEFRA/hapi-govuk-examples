@@ -88,7 +88,7 @@ Pressing the continue button should display the question page with two radio but
 
 When "Yes" is selected and continue is clicked, the completed page is displayed with the answer from the question page
 
-![alt text](../screen-shots/completed.png "completed page")
+![alt text](../screen-shots/completed-with-answer-in-query.png "completed page")
 
 ### Completed journey-map-example part 3
 If all the steps above, have been followed correctly, the project should contain the files found [here](.)

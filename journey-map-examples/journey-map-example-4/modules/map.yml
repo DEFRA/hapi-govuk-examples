@@ -1,0 +1,11 @@
+home:
+  path: /
+  route: home.route
+
+question:
+  path: /question
+  route: question.route
+
+completed:
+  path: /completed
+  route: completed.route
