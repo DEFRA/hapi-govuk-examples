@@ -1,5 +1,5 @@
 # Frontend example part 2
-Please note that this continues with the project built within [part 1](https://github.com/DEFRA/hapi-govuk-examples/tree/master/front-end-examples/frontend-example-1)
+Please note that this continues with the project built within [part 1](../frontend-example-1/README.md)
 
 ### Install your new dependencies
 The following dependencies are also required:
@@ -172,17 +172,17 @@ Now create your first view by creating the file views/home.njk with the followin
 
 Restart the server
 ```console
-foo@bar:~$ node index
+foo@bar:~$ npm start
 ```
 
 Check the server is running correctly on [localhost:3000](http://localhost:3000) again
 
 The browser should display: A [GOV.UK Design System styled](https://design-system.service.gov.uk/) web page with the heading **Hello World!**
 
-![alt text](https://raw.githubusercontent.com/DEFRA/hapi-govuk-examples/master/front-end-examples/screen-shots/gds-styled-home.png "GOV.UK Design System styled screen-shot")
+![alt text](../screen-shots/gds-styled-home.png "GOV.UK Design System styled screen-shot")
 
 ### Completed frontend-example part 2
-If all the steps above, have been followed correctly, the project should contain the files found [here](https://github.com/DEFRA/hapi-govuk-examples/tree/master/front-end-examples/frontend-example-2)
+If all the steps above, have been followed correctly, the project should contain the files found [here](.)
 
 ## Frontend example part 3
-Continue with the [part 3](https://github.com/DEFRA/hapi-govuk-examples/tree/master/front-end-examples/frontend-example-3)
+Continue with [part 3](../frontend-example-3/README.md)

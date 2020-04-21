@@ -1,5 +1,5 @@
 # Journey map example part 3
-Please note that this continues with the project built within [part 2](https://github.com/DEFRA/hapi-govuk-examples/tree/master/journey-map-examples/journey-map-example-2)
+Please note that this continues with the project built within [part 2](../journey-map-example-2/README.md)
 
 ## Add the completed page 
 The completed page will display the answer from the question page.
@@ -80,18 +80,18 @@ foo@bar:~$ npm start
 
 The browser should display the following web page with the continue button
 
-![alt text](https://raw.githubusercontent.com/DEFRA/hapi-govuk-examples/master/journey-map-examples/screen-shots/home.png "home page")
+![alt text](../screen-shots/home.png "home page")
 
 Pressing the continue button should display the question page with two radio buttons and a continue button
 
-![alt text](https://raw.githubusercontent.com/DEFRA/hapi-govuk-examples/master/journey-map-examples/screen-shots/question.png "question page")
+![alt text](../screen-shots/question.png "question page")
 
 When "Yes" is selected and continue is clicked, the completed page is displayed with the answer from the question page
 
-![alt text](https://raw.githubusercontent.com/DEFRA/hapi-govuk-examples/master/journey-map-examples/screen-shots/completed.png "completed page")
+![alt text](../screen-shots/completed.png "completed page")
 
 ### Completed journey-map-example part 3
-If all the steps above, have been followed correctly, the project should contain the files found [here](https://github.com/DEFRA/hapi-govuk-examples/tree/master/journey-map-examples/journey-map-example-3)
+If all the steps above, have been followed correctly, the project should contain the files found [here](.)
 
 ## Journey map example part 4
-Continue with the [part 4](https://github.com/DEFRA/hapi-govuk-examples/tree/master/journey-map-examples/journey-map-example-4)
+Continue with [part 4](../journey-map-example-4/README.md)

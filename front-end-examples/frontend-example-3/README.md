@@ -1,5 +1,5 @@
 # Frontend example part 3
-Please note that this continues with the project built within [part 2](https://github.com/DEFRA/hapi-govuk-examples/tree/master/front-end-examples/frontend-example-2)
+Please note that this continues with the project built within [part 2](../frontend-example-2/README.md)
 
 ### Break the project down into it's component parts
 In order to make it easier to maintain the project and add both additional plugins and routes, the project files need to be broken down into separate files.
@@ -122,26 +122,15 @@ Edit the view home.njk so that it extends the layout above
 
 Restart the server
 ```console
-foo@bar:~$ node index
+foo@bar:~$ npm start
 ```
 
 Check the server is running correctly on [localhost:3000](http://localhost:3000) again
 
 The browser should display the same [GOV.UK Design System styled](https://design-system.service.gov.uk/) web page with the heading **Hello World!** as before
 
-![alt text](https://raw.githubusercontent.com/DEFRA/hapi-govuk-examples/master/front-end-examples/screen-shots/gds-styled-home.png "GOV.UK Design System styled screen-shot")
+![alt text](../screen-shots/gds-styled-home.png "GOV.UK Design System styled screen-shot")
 
-### Completed frontend-example part 2
-If all the steps above, have been followed correctly, the project should contain the files found [here](https://github.com/DEFRA/hapi-govuk-examples/tree/master/front-end-examples/frontend-example-3)
-
-
-
-
-
-
-
-
-
-
-
+### Completed frontend-example part 3
+If all the steps above, have been followed correctly, the project should contain the files found [here](.)
 

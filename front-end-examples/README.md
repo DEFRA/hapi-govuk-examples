@@ -32,4 +32,4 @@ foo@bar:~$ nvm alias default 12
 ```
 
 ## Frontend example part 1
-Continue with the [part 1](https://github.com/DEFRA/hapi-govuk-examples/tree/master/front-end-examples/frontend-example-1)
+Begin with [part 1](frontend-example-1/README.md)

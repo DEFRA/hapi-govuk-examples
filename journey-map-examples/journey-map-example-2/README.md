@@ -1,5 +1,5 @@
 # Journey map example part 2
-Please note that this continues with the project built within [part 1](https://github.com/DEFRA/hapi-govuk-examples/tree/master/journey-map-examples/journey-map-example-1)
+Please note that this continues with the project built within [part 1](../journey-map-example-1/README.md)
 
 ## Add the question page 
 The question page will give a choice of Yes or No using the [Radios component](https://design-system.service.gov.uk/components/radios/).
@@ -109,18 +109,18 @@ foo@bar:~$ npm start
 
 The browser should display the following web page with the continue button
 
-![alt text](https://raw.githubusercontent.com/DEFRA/hapi-govuk-examples/master/journey-map-examples/screen-shots/home.png "home page")
+![alt text](../screen-shots/home.png "home page")
 
 Pressing the continue button should display the question page with two radio buttons and a continue button
 
-![alt text](https://raw.githubusercontent.com/DEFRA/hapi-govuk-examples/master/journey-map-examples/screen-shots/question.png "question page")
+![alt text](../screen-shots/question.png "question page")
 
 When "Yes" is selected and continue is clicked, the expected error status for the /completed page route is displayed as we haven't created it yet
 
 ![alt text](https://raw.githubusercontent.com/DEFRA/hapi-govuk-examples/master/journey-map-examples/screen-shots/completed(404).png "completed page missing")
 
 ### Completed journey-map-example part 2
-If all the steps above, have been followed correctly, the project should contain the files found [here](https://github.com/DEFRA/hapi-govuk-examples/tree/master/journey-map-examples/journey-map-example-2)
+If all the steps above, have been followed correctly, the project should contain the files found [here](.)
 
 ## Journey map example part 3
-Continue with the [part 3](https://github.com/DEFRA/hapi-govuk-examples/tree/master/journey-map-examples/journey-map-example-3)
+Continue with [part 3](../journey-map-example-3/README.md)

@@ -1,9 +1,10 @@
 # Journey map example part 1
-Please note that this relies on completing all the parts of the [frontend example](https://github.com/DEFRA/hapi-govuk-examples/tree/master/frontend-examples)
+Please note that this relies on completing all the parts of the [frontend example](../../front-end-examples/README.md)
 
 ### Make the home page a form with a continue button
 The continue button will make use of the [Button component](https://design-system.service.gov.uk/components/button/)
-Edit view/home.njk so that it contains the following:
+
+Edit views/home.njk so that it contains the following:
 ```twig
 {% extends "layout.njk" %}
 
@@ -55,16 +56,16 @@ Check the server is running correctly on [localhost:3000](http://localhost:3000)
 
 The browser should display the following web page with the continue button
 
-![alt text](https://raw.githubusercontent.com/DEFRA/hapi-govuk-examples/master/journey-map-examples/screen-shots/home.png "home page")
+![alt text](../screen-shots/home.png "home page")
 
 Pressing the continue button should display the expected error status for the /question page route as we haven't created it yet
 
-![alt text](https://raw.githubusercontent.com/DEFRA/hapi-govuk-examples/master/journey-map-examples/screen-shots/question(404).png "question page missing")
+![alt text](../screen-shots/question(404).png "question page missing")
 
 In the terminal, press control-C to stop the server.
 
 ### Completed journey-map-example part 1
-If all the steps above, have been followed correctly, the project should contain the files found [here](https://github.com/DEFRA/hapi-govuk-examples/tree/master/journey-map-examples/journey-map-example-1)
+If all the steps above, have been followed correctly, the project should contain the files found [here](.)
 
 ## Journey map example part 2
-Continue with the [part 2](https://github.com/DEFRA/hapi-govuk-examples/tree/master/journey-map-examples/journey-map-example-2)
+Continue with [part 2](../journey-map-example-2/README.md)
