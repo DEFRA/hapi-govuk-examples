@@ -134,3 +134,5 @@ The browser should display the same [GOV.UK Design System styled](https://design
 ### Completed frontend-example part 3
 If all the steps above, have been followed correctly, the project should contain the files found [here](.)
 
+## Journey map example
+Continue with the [journey map example](../../journey-map-examples/README.md)
