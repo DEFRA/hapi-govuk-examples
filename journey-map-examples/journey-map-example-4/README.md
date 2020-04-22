@@ -133,26 +133,22 @@ process.on('unhandledRejection', (err) => {
 init()
 ```
 
-Now change the "h.redirect" statements in all the routes to "h.continue" so that the plugin handle the redirection.
-
-Note that the answer to the question is stored within a query-data cache using setQueryData and getQueryData.
+Remove the path from all the routes as they are assigned within the map.yml file.
+Change the "h.redirect" statements in all the routes to "h.continue" so that the plugin handles the redirection.
+Store and recover the answer to the question using a query-data cache with the setQueryData and getQueryData functions.
 
 - home.route.js
     ```js
     'use strict'
-    
-    const path = '/'
-    
+        
     module.exports = [{
       method: 'GET',
-      path,
       handler: (request, h) => h.view('home', {
         pageHeading: 'Hello World!',
         pageText: 'Here is my first GOV.UK Design System styled page'
       })
     }, {
       method: 'POST',
-      path,
       handler: (request, h) => h.continue
     }]
     ```
@@ -161,11 +157,9 @@ Note that the answer to the question is stored within a query-data cache using s
     'use strict'
     
     const { setQueryData } = require('@envage/hapi-govuk-journey-map')
-    const path = '/question'
     
     module.exports = [{
       method: 'GET',
-      path,
       handler: (request, h) => h.view('question', {
         pageHeading: 'Are you enjoying these examples so far?',
         hint: { text: 'If I\'ve done my job correctly, they should be easy to follow' },
@@ -184,7 +178,6 @@ Note that the answer to the question is stored within a query-data cache using s
       })
     }, {
       method: 'POST',
-      path,
       handler: async (request, h) => {
         const { answer } = request.payload
         await setQueryData(request, { answer })
@@ -198,11 +191,9 @@ Note that the answer to the question is stored within a query-data cache using s
     'use strict'
     
     const { getQueryData } = require('@envage/hapi-govuk-journey-map')
-    const path = '/completed'
     
     module.exports = {
       method: 'GET',
-      path,
       handler: async (request, h) => {
         const { answer } = await getQueryData(request)
         return h.view('completed', {
