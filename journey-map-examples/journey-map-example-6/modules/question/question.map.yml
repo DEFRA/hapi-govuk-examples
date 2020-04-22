@@ -1,0 +1,11 @@
+question:
+  route: question.route
+  next:
+    query: answer
+    when:
+      yes: return
+      no: comment
+
+comment:
+  path: /comment
+  route: comment.route

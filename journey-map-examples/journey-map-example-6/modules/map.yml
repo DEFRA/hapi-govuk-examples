@@ -1,0 +1,20 @@
+home:
+  path: /
+  route: home.route
+
+like-my-example:
+  path: /like-my-example
+  module: question
+  next:
+    query: answer
+    when:
+      yes: completed
+      no: apology
+
+apology:
+  path: /apology
+  route: apology.route
+
+completed:
+  path: /completed
+  route: completed.route
