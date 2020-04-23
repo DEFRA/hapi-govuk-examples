@@ -73,6 +73,8 @@ Make sure all the javascript files are formatted correctly using standard
 foo@bar:~$ npx standard --fix
 ```
 
+### Make sure the application now works as expected
+
 Now start the server
 ```console
 foo@bar:~$ npm start
