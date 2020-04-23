@@ -170,6 +170,8 @@ Now create your first view by creating the file views/home.njk with the followin
 {% endblock %}
 ```
 
+### Make sure the application now works as expected
+
 Restart the server
 ```console
 foo@bar:~$ npm start

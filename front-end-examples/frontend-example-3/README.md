@@ -120,6 +120,8 @@ Edit the view home.njk so that it extends the layout above
 {% endblock %}
 ```
 
+### Make sure the application now works as expected
+
 Restart the server
 ```console
 foo@bar:~$ npm start

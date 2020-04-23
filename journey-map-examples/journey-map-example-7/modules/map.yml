@@ -1,0 +1,33 @@
+home:
+  path: /
+  route: home.route
+
+like-my-example:
+  path: /like-my-example
+  module: question
+  options:
+    questionHeading: Are you enjoying these examples so far?
+    answerProperty: likeMyExample
+    hint: If I've done my job correctly, they should be easy to follow
+    items:
+      - value: yes
+        text: Yes
+        hint: They're great
+      - value: no
+        text: No
+        hint: Not really
+    commentHeading: Please leave a comment
+    commentProperty: likeMyExampleComment
+  next:
+    query: likeMyExample
+    when:
+      yes: completed
+      no: apology
+
+apology:
+  path: /apology
+  route: apology.route
+
+completed:
+  path: /completed
+  route: completed.route

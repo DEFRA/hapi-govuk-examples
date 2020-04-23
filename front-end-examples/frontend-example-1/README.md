@@ -103,6 +103,8 @@ Edit the script property within the package.json file so that it contains the st
   },
 ```
 
+### Make sure the application now works as expected
+
 Now start the server
 ```console
 foo@bar:~$ npm start
