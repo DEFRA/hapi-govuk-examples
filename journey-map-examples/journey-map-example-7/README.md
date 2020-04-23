@@ -86,7 +86,7 @@ module.exports = [{
           value,
           text,
           hint: { text: hint },
-          checked: queryData[answerProperty] === value
+          checked: queryData[answerProperty] === String(value)
         }
       })
     })
