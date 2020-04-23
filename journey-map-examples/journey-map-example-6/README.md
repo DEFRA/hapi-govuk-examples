@@ -108,9 +108,9 @@ home:
   path: /
   route: home.route
 
-question:
-  path: /question
-  route: question.route
+like-my-example:
+  path: /like-my-example
+  module: question
   next:
     query: answer
     when:
