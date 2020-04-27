@@ -1,17 +1,21 @@
 # Hapi Govuk examples
 
-An introduction to the govuk plugins (by example) for the hapi Node.js framework.
-
+An introduction to building a hapi service using the govuk plugins (by example) for the hapi Node.js framework.
 
 ## Prerequisites
 - Node v12+ ([The best way to install Node is via NVM](https://github.com/nvm-sh/nvm))
 
 
 ## The hapi-govuk plugins:
-- [@envage/hapi-govuk-frontend](https://www.npmjs.com/package/@envage/hapi-govuk-frontend)
-- [@envage/hapi-govuk-journey-map](https://www.npmjs.com/package/@envage/hapi-govuk-journey-map)
-- [@envage/hapi-govuk-question-page](https://www.npmjs.com/package/@envage/hapi-govuk-question-page)
+- The [frontend tutorial](#hapi-govuk-frontend) using the [@envage/hapi-govuk-frontend](https://www.npmjs.com/package/@envage/hapi-govuk-frontend) plugin 
+- The [journey map tutorial](#hapi-govuk-journey-map) using the [@envage/hapi-govuk-journey-map](https://www.npmjs.com/package/@envage/hapi-govuk-journey-map) plugin
+- The [question page tutorial](#hapi-govuk-question-page) using the [@envage/hapi-govuk-question-page](https://www.npmjs.com/package/@envage/hapi-govuk-question-page) plugin 
 
+
+## Other essential plugins:
+- The [essential plugins tutorial](./essential-plugin-examples/README.md)
+
+--------------------------------
 
 ## hapi-govuk-frontend
 
@@ -21,7 +25,10 @@ The plugin assumes that [Nunjucks](https://mozilla.github.io/nunjucks/) will be 
 
 The [govuk-frontend](https://github.com/alphagov/govuk-frontend) npm module should be installed as a peer dependency.
 
-#### Front end [examples](./front-end-examples/README.md):
+#### Front end examples:
+- [Frontend example introduction](./front-end-examples/README.md)  
+  Prepare your environment
+  
 - [Frontend example part 1](./front-end-examples/frontend-example-1/README.md)  
   Create the example project including a hapi server with one route
   
@@ -33,13 +40,17 @@ The [govuk-frontend](https://github.com/alphagov/govuk-frontend) npm module shou
 - [Frontend example part 3](./front-end-examples/frontend-example-3/README.md)  
   Break the hapi server within the example project into component parts 
 
+--------------------------------
 
 ## hapi-govuk-journey-map
 
 Provides a way to organise the routes in a hapi server into reusable modules.
 Using mapping files, the plugin also provides a way to create journeys within and between each module instance.
 
-#### Journey map [examples](./journey-map-examples):
+#### Journey map examples:
+- [Journey map example introduction](./journey-map-examples/README.md)  
+  Introduction to the journey map
+  
 - [Journey map example part 1](./journey-map-examples/journey-map-example-1/README.md)  
   Without using the Journey map plugin, add a continue button using  
   the nunjucks macro [govukButton](https://design-system.service.gov.uk/components/button/).  
@@ -79,10 +90,14 @@ Using mapping files, the plugin also provides a way to create journeys within an
   Re-use the question module by registering it twice more in the main map file with
   different module options.
 
+--------------------------------
 
 ## hapi-govuk-question-page
 
 Provides a configuration-driven approach to implementing simple pages using the [GOV.UK Design System](https://design-system.service.gov.uk/).
 
-#### Question page [examples](./question-page-examples)
+#### Question page examples:
+- [Question page example introduction](./question-page-examples/README.md)  
+  Introduction to question pages
+  
 
