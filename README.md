@@ -2,6 +2,8 @@
 
 An introduction to building a hapi service using the govuk plugins (by example) for the hapi Node.js framework.
 
+_Please note these examples have been developed from what was learned while developing the [permitting proof of concept](https://github.com/DEFRA/permit-poc)_ which is a good reference point if anything is not clear here.
+
 ## Prerequisites
 - Node v12+ ([The best way to install Node is via NVM](https://github.com/nvm-sh/nvm))
 
