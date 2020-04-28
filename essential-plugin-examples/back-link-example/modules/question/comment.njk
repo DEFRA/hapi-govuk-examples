@@ -1,0 +1,23 @@
+{% extends "layout.njk" %}
+
+{% from "govuk/components/textarea/macro.njk" import govukTextarea %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block content %}
+    <form method="post" autocomplete="off" novalidate>
+        {{ govukTextarea({
+            name: "comment",
+            id: "comment",
+            label: {
+                text: pageHeading,
+                isPageHeading: true,
+                classes: "govuk-fieldset__legend--l"
+            },
+            value: comment
+        }) }}
+
+        {{ govukButton({
+            text: "Continue"
+        }) }}
+    </form>
+{% endblock %}

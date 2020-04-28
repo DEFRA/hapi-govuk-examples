@@ -1,0 +1,16 @@
+
+<!-- Hide the back link with css if no-script -->
+<noscript>
+    <style>#defra-back-link {display: none} </style>
+</noscript>
+
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+
+{{ govukBackLink({
+    text: "Back",
+    href: "#",
+    attributes: {
+        id: "defra-back-link",
+        onclick: "window.history.go(-1); return false;"
+    }
+}) }}

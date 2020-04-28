@@ -1,0 +1,31 @@
+{% extends "govuk/template.njk" %}
+
+{% from "govuk/components/header/macro.njk" import govukHeader %}
+
+{% block head %}
+    <link href="{{ assetPath }}/stylesheets/application.css" rel="stylesheet"/>
+{% endblock %}
+
+{% block header %}
+    {{ govukHeader({
+        homepageUrl: "#",
+        containerClasses: "govuk-width-container",
+        serviceName: serviceName,
+        serviceUrl: "/"
+    }) }}
+{% endblock %}
+
+{% block beforeContent %}
+    {% if includeBacklink %}
+        {% include 'back-link.njk' %}
+    {% endif %}
+{% endblock %}
+
+{% block pageTitle %}
+    {{ pageHeading }} - {{ pageTitle }}
+{% endblock %}
+
+{% block bodyEnd %}
+    <script src="{{ assetPath }}/all.js"></script>
+    <script>window.GOVUKFrontend.initAll()</script>
+{% endblock %}
