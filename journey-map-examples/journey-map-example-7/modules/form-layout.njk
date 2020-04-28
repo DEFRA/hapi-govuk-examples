@@ -1,0 +1,15 @@
+{% extends "layout.njk" %}
+
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block content %}
+    <form method="post" autocomplete="off" novalidate>
+        {% block formContent %}
+        {% endblock %}
+
+        {{ govukButton({
+            text: "Continue"
+        }) }}
+    </form>
+{% endblock %}
+

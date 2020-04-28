@@ -6,31 +6,24 @@ The question page will give a choice of Yes or No using the [Radios component](h
 
 Create the views/question.njk file with the following:
 ```twig
-{% extends "layout.njk" %}
+{% extends "form-layout.njk" %}
 
 {% from "govuk/components/radios/macro.njk" import govukRadios %}
-{% from "govuk/components/button/macro.njk" import govukButton %}
 
-{% block content %}
-    <form method="post" autocomplete="off" novalidate>
-        {{ govukRadios({
-            idPrefix: "answer",
-            name: "answer",
-            fieldset: {
-                legend: {
-                    text: pageHeading,
-                    isPageHeading: true,
-                    classes: "govuk-fieldset__legend--l"
-                }
-            },
-            hint: hint,
-            items: items
-        }) }}
-
-        {{ govukButton({
-            text: "Continue"
-        }) }}
-    </form>
+{% block formContent %}
+    {{ govukRadios({
+        idPrefix: "answer",
+        name: "answer",
+        fieldset: {
+            legend: {
+                text: pageHeading,
+                isPageHeading: true,
+                classes: "govuk-fieldset__legend--l"
+            }
+        },
+        hint: hint,
+        items: items
+    }) }}
 {% endblock %}
 ```
 

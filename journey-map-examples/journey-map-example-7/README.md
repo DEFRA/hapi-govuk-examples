@@ -142,7 +142,7 @@ module.exports = [{
 }]
 ```
 
-Edit the route file modules/question/completed.route.js to use the correct comment property
+Edit the route file modules/completed.route.js to use the correct comment property
 ```js
 'use strict'
 
