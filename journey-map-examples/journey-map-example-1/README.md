@@ -3,22 +3,33 @@ Please note that this relies on completing all the parts of the [frontend exampl
 
 ### Make the home page a form with a continue button
 The continue button will make use of the [Button component](https://design-system.service.gov.uk/components/button/)
+A form layout that extends from the layout will be used so that all form based views can reuse the form markup.
 
-Edit views/home.njk so that it contains the following:
+Create a new layout as views/form-layout.njk that contains the following:
 ```twig
 {% extends "layout.njk" %}
 
 {% from "govuk/components/button/macro.njk" import govukButton %}
 
-{% block content %}
+{% block formContent %}
     <form method="post" autocomplete="off" novalidate>
-        <h1 class="govuk-heading-xl">{{ pageHeading }}</h1>
-        <p class="govuk-body">{{ pageText }}</p>
+        {% block formContent %}
+        {% endblock %}
 
         {{ govukButton({
             text: "Continue"
         }) }}
     </form>
+{% endblock %}
+```
+
+Edit views/home.njk so that it extends from the form layout and uses the formContent block:
+```twig
+{% extends "form-layout.njk" %}
+ 
+{% block formContent %}
+    <h1 class="govuk-heading-xl">{{ pageHeading }}</h1>
+    <p class="govuk-body">{{ pageText }}</p>
 {% endblock %}
 ```
 

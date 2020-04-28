@@ -71,6 +71,25 @@ completed:
   route: completed.route
 ```
 
+Now add the satisfaction score to modules/completed.route.js
+```js
+'use strict'
+
+const { getQueryData } = require('@envage/hapi-govuk-journey-map')
+
+module.exports = {
+  method: 'GET',
+  handler: async (request, h) => {
+    const { likeMyExample: answer, likeMyExampleComment: comment, satisfactionScore } = await getQueryData(request)
+    const commentDetail = comment ? `<br>and the following comment:<br><strong>"${comment}"</strong>` : ''
+    return h.view('completed', {
+      pageHeading: 'Example complete',
+      details: `You chose<br><strong>${answer}</strong><br>with a satisfaction score of <strong>${satisfactionScore}</strong> ${commentDetail}`
+    })
+  }
+}
+```
+
 Make sure all the javascript files are formatted correctly using standard
 ```console
 foo@bar:~$ npx standard --fix

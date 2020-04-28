@@ -58,28 +58,21 @@ module.exports = [{
 
 Create the new view file modules/question/comment.njk
 ```twig
-{% extends "layout.njk" %}
+{% extends "form-layout.njk" %}
 
 {% from "govuk/components/textarea/macro.njk" import govukTextarea %}
-{% from "govuk/components/button/macro.njk" import govukButton %}
 
-{% block content %}
-    <form method="post" autocomplete="off" novalidate>
-        {{ govukTextarea({
-            name: "comment",
-            id: "comment",
-            label: {
-                text: pageHeading,
-                isPageHeading: true,
-                classes: "govuk-fieldset__legend--l"
-            },
-            value: comment
-        }) }}
-
-        {{ govukButton({
-            text: "Continue"
-        }) }}
-    </form>
+{% block formContent %}
+    {{ govukTextarea({
+        name: "comment",
+        id: "comment",
+        label: {
+            text: pageHeading,
+            isPageHeading: true,
+            classes: "govuk-fieldset__legend--l"
+        },
+        value: comment
+    }) }}
 {% endblock %}
 ```
 

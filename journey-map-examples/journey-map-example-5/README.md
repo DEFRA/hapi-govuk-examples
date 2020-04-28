@@ -23,19 +23,11 @@ module.exports = [{
 
 Create the new view file modules/apology.njk
 ```twig
-{% extends "layout.njk" %}
+{% extends "form-layout.njk" %}
 
-{% from "govuk/components/button/macro.njk" import govukButton %}
-
-{% block content %}
-    <form method="post" autocomplete="off" novalidate>
-        <h1 class="govuk-heading-xl">{{ pageHeading }}</h1>
-        <p class="govuk-body">{{ pageText }}</p>
-
-        {{ govukButton({
-            text: "Continue"
-        }) }}
-    </form>
+{% block formContent %}
+    <h1 class="govuk-heading-xl">{{ pageHeading }}</h1>
+    <p class="govuk-body">{{ pageText }}</p>
 {% endblock %}
 ```
 
