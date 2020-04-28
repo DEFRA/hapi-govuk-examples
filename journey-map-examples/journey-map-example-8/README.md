@@ -119,6 +119,6 @@ Pressing the continue button should display the completed page with "no", the co
 ### Completed journey-map-example part 8
 If all the steps above, have been followed correctly, the project should contain the files found [here](.)
 
-## Journey map example part 9
-Continue with [part 9](../journey-map-example-9/README.md)
+## Question page example
+Continue with the [question page example](../../question-page-examples/README.md)
 
