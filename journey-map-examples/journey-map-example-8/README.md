@@ -118,7 +118,7 @@ When "Brilliant" is selected and continue is clicked, the completed page is disp
 
 ![alt text](../screen-shots/completed-satisfaction-score-of-3.png "completed with yes and score of 3 page")
 
-Now press the browser button back to return to the first question page and select "No".  
+Now press the browser back button (or the [back link](../../essential-plugin-examples/back-link-example/README.md)) to return to the first question page and select "No".  
 This time when continue is clicked, the comment page is displayed.
 
 ![alt text](../screen-shots/comment.png "completed with yes page")
