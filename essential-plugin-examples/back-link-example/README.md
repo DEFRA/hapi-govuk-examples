@@ -27,7 +27,7 @@ Create the new modules/back-link.njk component as follows:
 ```twig
 <!-- Hide the back link with css if no-script -->
 <noscript>
-    <style>#defra-back-link {display: none} </style>
+    <style>#back-link {display: none} </style>
 </noscript>
 
 {% from "govuk/components/back-link/macro.njk" import govukBackLink %}
@@ -36,7 +36,7 @@ Create the new modules/back-link.njk component as follows:
     text: "Back",
     href: "#",
     attributes: {
-        id: "defra-back-link",
+        id: "back-link",
         onclick: "window.history.go(-1); return false;"
     }
 }) }}
@@ -108,3 +108,10 @@ foo@bar:~$ npm start
 ```
 
 The home page should have no back link but subsequent pages should have a working [back link](https://design-system.service.gov.uk/components/back-link/)
+
+
+### Completed back link example
+If all the steps above, have been followed correctly, the project should contain the files found [here](.)
+
+## Other essential plugins
+Continue with the [other essential plugins](../README.md)
