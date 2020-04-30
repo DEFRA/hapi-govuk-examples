@@ -9,6 +9,12 @@ Provide standard logging using the [Defra Logging Facade](https://github.com/DEF
 - [Logging plugin example](logging-example/README.md)  
 
 
+## Form validation:
+
+Provide validation of form entered data using [@hapi/joi](https://www.npmjs.com/package/@hapi/joi):
+- [Form validation example](form-validation-example/README.md)
+
+
 ## CSRF crumb plugin:
 
 Provide CSRF crumb generation and validation using the [@hapi/crumb](https://www.npmjs.com/package/@hapi/crumb) plugin:

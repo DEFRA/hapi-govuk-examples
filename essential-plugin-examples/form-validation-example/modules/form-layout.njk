@@ -1,0 +1,19 @@
+{% extends "layout.njk" %}
+
+{% from "govuk/components/error-summary/macro.njk" import govukErrorSummary %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block content %}
+    {% if errorSummary %}
+        {{ govukErrorSummary(errorSummary) }}
+    {% endif %}
+
+    <form method="post" autocomplete="off" novalidate>
+        {% block formContent %}
+        {% endblock %}
+
+        {{ govukButton({
+            text: "Continue"
+        }) }}
+    </form>
+{% endblock %}
