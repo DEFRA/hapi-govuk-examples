@@ -22,6 +22,7 @@ _Please note these examples have been developed from what was learned while deve
     - The [form validation module](./essential-plugin-examples/form-validation-example/README.md)
     - The [service status plugin](./essential-plugin-examples/service-status-example/README.md) using the [hapi-version-status](https://www.npmjs.com/package/hapi-version-status) plugin
     - The [robots plugin](./essential-plugin-examples/robots-example/README.md) using the [hapi-robots](https://www.npmjs.com/package/hapi-robots) plugin
+    - The [blipp plugin](./essential-plugin-examples/blipp-example/README.md) using the [blipp](https://www.npmjs.com/package/blipp) plugin
 
 --------------------------------
 

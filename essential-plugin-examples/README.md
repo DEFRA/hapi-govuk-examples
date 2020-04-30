@@ -38,3 +38,9 @@ Provide a service status plugin:
 Provide a robots plugin:
 - [Robots plugin example](robots-example/README.md)
 
+
+## Blipp routes plugin:
+
+Provide a way to display the registered routes in a table to the console at startup
+- [Blipp routes plugin example](blipp-example/README.md)
+

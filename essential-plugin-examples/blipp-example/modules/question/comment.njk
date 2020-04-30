@@ -1,0 +1,16 @@
+{% extends "form-layout.njk" %}
+
+{% from "govuk/components/textarea/macro.njk" import govukTextarea %}
+
+{% block formContent %}
+    {{ govukTextarea({
+        name: "comment",
+        id: "comment",
+        label: {
+            text: pageHeading,
+            isPageHeading: true,
+            classes: "govuk-fieldset__legend--l"
+        },
+        value: comment
+    }) }}
+{% endblock %}
