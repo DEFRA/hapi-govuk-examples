@@ -19,6 +19,8 @@ _Please note these examples have been developed from what was learned while deve
     - The [back link plugin](./essential-plugin-examples/back-link-example/README.md)
     - The [csrf crumb plugin](./essential-plugin-examples/csrf-crumb-example/README.md) using the [@hapi/crumb](https://www.npmjs.com/package/@hapi/crumb) plugin
     - The [logging plugin](./essential-plugin-examples/logging-example/README.md) using the [defra-logging-facade](https://github.com/DEFRA/defra-logging-facade) plugin
+    - The [form validation module](./essential-plugin-examples/form-validation-example/README.md)
+    - The [service status plugin](./essential-plugin-examples/service-status-example/README.md) using the [hapi-version-status](https://www.npmjs.com/package/hapi-version-status) plugin
 
 --------------------------------
 
