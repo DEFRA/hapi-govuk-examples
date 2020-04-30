@@ -53,7 +53,7 @@ Edit the modules/form-layout.njk to include the CsrfToken block
 {% endblock %}
 ```
 
-Edit the index.js file to register the back-link plugin
+Edit the index.js file to register the csrf-crumb plugin
 ```js
 'use strict'
 

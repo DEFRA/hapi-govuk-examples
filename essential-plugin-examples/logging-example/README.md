@@ -2,7 +2,7 @@
 
 Logging is a requirement for any DEFRA service.
 
-The following example will build on the [front end examples](../../front-end-examples/README.md) and make use of the [defra-logging-facade](https://github.com/DEFRA/defra-logging-facade) plugin to provide a simple way to configure the logging in a hapi server.
+The following example will build on the [journey map examples](../../journey-map-examples/README.md) and make use of the [defra-logging-facade](https://github.com/DEFRA/defra-logging-facade) plugin to provide a simple way to configure the logging in a hapi server.
 
 ### Install the plugin along with required peer dependencies
 Use npm install
@@ -63,7 +63,7 @@ const init = async () => {
 
   await server.register(require('./plugins/logging.plugin'))
   await server.register(require('./plugins/frontend.plugin'))
-  await server.route(require('./routes/home.route'))
+  await server.register(require('./plugins/journey-map.plugin'))
   await server.start()
 
   console.log('Server running on %s', server.info.uri)
@@ -77,15 +77,14 @@ process.on('unhandledRejection', (err) => {
 init()
 ```
 
-Add a logging message of type info to the route routes/home.route.js
+Add a logging message of type info to the route modules/home.route.js
 ```js
 'use strict'
 
 const { logger } = require('defra-logging-facade')
 
-module.exports = {
+module.exports = [{
   method: 'GET',
-  path: '/',
   handler: (request, h) => {
     logger.info('******* You have just loaded the home page! *******')
 
@@ -94,7 +93,10 @@ module.exports = {
       pageText: 'Here is my first GOV.UK Design System styled page'
     })
   }
-}
+}, {
+  method: 'POST',
+  handler: (request, h) => h.continue
+}]
 ```
 
 Make sure all the javascript files are formatted correctly using standard

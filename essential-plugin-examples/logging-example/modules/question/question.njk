@@ -1,0 +1,19 @@
+{% extends "form-layout.njk" %}
+
+{% from "govuk/components/radios/macro.njk" import govukRadios %}
+
+{% block formContent %}
+    {{ govukRadios({
+        idPrefix: "answer",
+        name: "answer",
+        fieldset: {
+            legend: {
+                text: pageHeading,
+                isPageHeading: true,
+                classes: "govuk-fieldset__legend--l"
+            }
+        },
+        hint: hint,
+        items: items
+    }) }}
+{% endblock %}

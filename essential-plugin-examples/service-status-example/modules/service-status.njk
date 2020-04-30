@@ -1,0 +1,35 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+    <h1 class="govuk-heading-xl">{{ pageHeading }}</h1>
+    {% for service in services %}
+        <ul class="govuk-list">
+            <li>
+                <label>Service:</label>
+                <strong id="application-service-{{ service.name }}">{{ service.name }}</strong>
+            </li>
+            <li>
+                <label>Version:</label>
+                <strong id="application-version-{{ service.name }}">{{ service.version }}</strong>
+            </li>
+            <li>
+                <label>Commit hash:</label>
+                <strong>
+                    <a id="commit-hash-{{ service.name }}" target="_blank" class="govuk-link"
+                       href="{{ service.commit }}">{{ service.hash }}</a>
+                </strong>
+            </li>
+            <li>
+                <label>Started:</label>
+                <strong>{{ service.started }}</strong>
+            </li>
+        </ul>
+    {% endfor %}
+
+    <ul class="govuk-list">
+        <li>
+            <label>Page rendered:</label>
+            <strong>{{ rendered }}</strong>
+        </li>
+    </ul>
+{% endblock %}

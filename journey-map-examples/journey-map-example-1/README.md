@@ -11,7 +11,7 @@ Create a new layout as views/form-layout.njk that contains the following:
 
 {% from "govuk/components/button/macro.njk" import govukButton %}
 
-{% block formContent %}
+{% block content %}
     <form method="post" autocomplete="off" novalidate>
         {% block formContent %}
         {% endblock %}
