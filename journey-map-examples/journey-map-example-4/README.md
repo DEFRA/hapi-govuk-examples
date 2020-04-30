@@ -235,6 +235,43 @@ When "Yes" is selected and continue is clicked, the completed page is displayed 
 
 ![alt text](../screen-shots/completed.png "completed page")
 
+Performing a get request against http://localhost:3000/journey-map will return the generated journey map in json form for debugging purposes.
+
+_Please note this route only exists if the journey-map.plugin.js file contains the journeyMapPath property._
+
+```json
+{
+  "home": {
+    "path": "/",
+    "route": "home.route",
+    "id": "home",
+    "next": "question",
+    "method": [
+      "GET",
+      "POST"
+    ]
+  },
+  "question": {
+    "path": "/question",
+    "route": "question.route",
+    "id": "question",
+    "next": "completed",
+    "method": [
+      "GET",
+      "POST"
+    ]
+  },
+  "completed": {
+    "path": "/completed",
+    "route": "completed.route",
+    "id": "completed",
+    "method": [
+      "GET"
+    ]
+  }
+}
+``` 
+
 ### Completed journey-map-example part 4
 If all the steps above, have been followed correctly, the project should contain the files found [here](.)
 
