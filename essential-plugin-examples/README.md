@@ -32,3 +32,9 @@ Provide a back link plugin:
 Provide a service status plugin:
 - [Service status plugin example](service-status-example/README.md)
 
+
+## Robots plugin:
+
+Provide a robots plugin:
+- [Robots plugin example](robots-example/README.md)
+

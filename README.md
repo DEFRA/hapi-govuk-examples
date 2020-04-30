@@ -21,6 +21,7 @@ _Please note these examples have been developed from what was learned while deve
     - The [logging plugin](./essential-plugin-examples/logging-example/README.md) using the [defra-logging-facade](https://github.com/DEFRA/defra-logging-facade) plugin
     - The [form validation module](./essential-plugin-examples/form-validation-example/README.md)
     - The [service status plugin](./essential-plugin-examples/service-status-example/README.md) using the [hapi-version-status](https://www.npmjs.com/package/hapi-version-status) plugin
+    - The [robots plugin](./essential-plugin-examples/robots-example/README.md) using the [hapi-robots](https://www.npmjs.com/package/hapi-robots) plugin
 
 --------------------------------
 
