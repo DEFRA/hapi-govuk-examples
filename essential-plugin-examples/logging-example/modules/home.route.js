@@ -2,9 +2,8 @@
 
 const { logger } = require('defra-logging-facade')
 
-module.exports = {
+module.exports = [{
   method: 'GET',
-  path: '/',
   handler: (request, h) => {
     logger.info('******* You have just loaded the home page! *******')
 
@@ -13,4 +12,7 @@ module.exports = {
       pageText: 'Here is my first GOV.UK Design System styled page'
     })
   }
-}
+}, {
+  method: 'POST',
+  handler: (request, h) => h.continue
+}]

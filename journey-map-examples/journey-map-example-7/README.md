@@ -44,7 +44,7 @@ completed:
   route: completed.route
 ```
 
-The edit the mapping for the question module modules/question/question.map.yml
+Edit the mapping for the question module modules/question/question.map.yml
 ```yaml
 question:
   route: question.route

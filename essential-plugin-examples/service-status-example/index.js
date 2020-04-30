@@ -8,8 +8,8 @@ const init = async () => {
     host: 'localhost'
   })
 
-  await server.register(require('./plugins/logging.plugin'))
   await server.register(require('./plugins/frontend.plugin'))
+  await server.register(require('./plugins/service-status.plugin'))
   await server.register(require('./plugins/journey-map.plugin'))
   await server.start()
 
