@@ -1,6 +1,6 @@
 # Essential plugin examples
 
-The examples for the plugins discussed here will al be based on the completion of the [Journey map examples](../journey-map-examples/README.md)
+The examples for the plugins discussed here will all be based on the completion of the [Journey map examples](../journey-map-examples/README.md)
 and only include the changes for each plugin discussed.
 
 ## Logging plugin:
