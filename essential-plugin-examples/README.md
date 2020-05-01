@@ -21,6 +21,12 @@ Provide CSRF crumb generation and validation using the [@hapi/crumb](https://www
 - [CSRF crumb plugin example](csrf-crumb-example/README.md)
 
 
+## Session cache plugin:
+
+Provide session cache using the [@hapi/yar](https://www.npmjs.com/package/@hapi/yar) plugin:
+- [Session cache plugin example](session-cache-example/README.md)
+
+
 ## Back link plugin:
 
 Provide a back link plugin:
